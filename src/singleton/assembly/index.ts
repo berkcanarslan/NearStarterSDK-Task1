@@ -6,7 +6,8 @@ export class Contract {
 
   // return the string 'hello world'
   helloWorld(): string {
-    return this.message
+    const predecessor = Context.predecessor
+    return 'hello ' + predecessor
   }
 
   // read the given key from account (contract) storage
